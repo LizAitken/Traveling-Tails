@@ -42,5 +42,5 @@ Thank you to Google Maps API, Google Places API, Kinduff Dog-API.
 Thank you to the sources where the images were found.
 1. Dog graphics from Ai on giphy - (https://giphy.com/aisforai)
 2. All the small icons found from [freepik.com](https://www.freepik.com/)- specific authors mentioned in HTML file.
-Thank you to our dogs which inspire us daily.
+Thank you to our dogs whom inspire us daily.
 
