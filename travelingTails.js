@@ -349,6 +349,7 @@ function setRestaurantLocations() {
         });
 
 };
+
 //Making the map, setting it to the first coordinates in the location inputed Array
 function markPlaces(name, rating, latitude, longitude, inDesLat, inDesLong, iconPix) {
     const options = {
