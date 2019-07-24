@@ -13,8 +13,6 @@ const firstPage = document.querySelector('#inner-body-wrapper');
 const dogImage = document.querySelector('.image-dog2');
 
 
-let screenHeight = window.visualViewport.height;
-let screenWidth = window.visualViewport.width;
 //Bending the title
 //Credit to: https://appendto.com/2016/09/how-to-make-circularcurved-text-with-javascript/
 // circularText("                 Traveling Tails", 230, 0);
@@ -31,17 +29,40 @@ function circularText(txt, radius, classIndex) {
     origin += deg;
   });
 }
+circularText("                  Traveling Tails", 400, 0);
+// let screenHeight = window.visualViewport.height;
 
 //Making it fit larger screen size
-if (screenWidth >= 1000) {
-    circularText("                  Traveling Tails", 400, 0);
-} else if (screenWidth < 1000) {
-    circularText("                 Traveling Tails", 230, 0);
-};
+// Safari browser does not support visualViewport
+// function changeCirText() {
+//     let screenWidth = window.visualViewport.width;
+
+//     if (screenWidth >= 1000) {
+//         circularText("                  Traveling Tails", 400, 0);
+//     } else if (screenWidth < 1000) {
+//         circularText("                 Traveling Tails", 230, 0);
+//     };
+// }
+
+const nonCirTitle = document.querySelector('.small-title-wrap');
+const circTxt = document.getElementsByClassName("title1");
+try {
+    changeCirText();
+} catch(error) {
+    console.error(error);
+    // console.log(nonCirTitle);
+    throw (circTxt.style.display ='none', nonCirTitle.style.display='block');
+    // var newDiv = document.createElement("div"); 
+    // var newContent = document.createTextNode("Hi there and greetings!");
+    // newDiv.appendChild(newContent);
+    // var currentDiv = document.querySelector(".pix-blurb-wrap"); 
+    // document.body.insertBefore(newDiv, currentDiv); 
+    // error?(circTxt.style.display ='none', nonCirTitle.style.display='block'): circTxt.style.display='block';
+}
 
 //Button for search bar
 firstButton.addEventListener('click', function(e){
-    console.log(screenWidth);
+    // console.log(screenWidth);
     //Checks to see if the search-bar is empty
     if (document.querySelector('#search-bar').value === ''){
         //if it is send an alert asking the user for a zip code then reset the page
