@@ -2,7 +2,7 @@
 ##Description
 Traveling Tails was created to optimize travel and other activities with dogs. Within the application, one can filter areas through five different categories: hotels, parks, restaurants, health services for pets, and pet stores. When inputing the location, the user is taken to a map populated with the categories' locations. There is also a feature where if you click on a dog image, random dog facts will appear.
 
-##Technologies Used
+## Technologies Used
 The various APIs used are the following:
 1. Google Maps
 2. Google Places 
@@ -13,7 +13,7 @@ Written with:
 2. CSS
 3. HTML
 
-##Features
+## Features
 1. Primary Screen Display - The user is first shown the following:
 
 * A nav bar with an interactive HOME text field, utilizing JS to animate it and JS for its click function to return it back to the original screen.
@@ -30,11 +30,11 @@ Written with:
 * Upon clicking one of the markers, an info-window will pop up inside the map and the user will be able to see the title of the place linked to open another tab of the said place, and the rating.
 * There is a dog gif to the right of the map if clicked, random quotes will generate from the dog quote API and will replace one another on top of the dog. This is only a feature for the larger sized screens. Mobile does not have the feature.
 
-##Authors
+## Authors
 Liz Aitken - [GitHub Link](https://github.com/LizAitken/)
 Reagan Davenport - [GitHub Link](https://github.com/ReaganADavenport)
 
-##Credit
+## Credit
 Thank you to Google Maps API, Google Places API, Kinduff Dog-API.
 1. (https://developers.google.com/maps/documentation/)
 2. (https://developers.google.com/places/web-service/intro)
